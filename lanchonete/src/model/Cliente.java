@@ -4,10 +4,12 @@ public class Cliente {
 
     private String Nome;
     private String Sobrenome;
+    private String Preco1;
 
     public Cliente(String nome, String sobrenome) {
         Nome = nome;
         Sobrenome = sobrenome;
+        Preco1 = Preco1;
     }
 
     public void Hello(){
@@ -36,5 +38,8 @@ public class Cliente {
     public void setNome(String nome) {
         Nome = nome;
     }
+
+    public void setPreco(String preco){ Preco1 = preco;}
+
 
 }

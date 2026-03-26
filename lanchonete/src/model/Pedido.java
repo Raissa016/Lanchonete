@@ -4,6 +4,7 @@ public class Pedido {
 
     private Cliente cliente;
     private Hamburguer ingredientes;
+  //  public Preco valor;
 
 
     public Pedido(Cliente cliente, Hamburguer ingredientes) {
@@ -27,6 +28,14 @@ public class Pedido {
         this.ingredientes = ingredientes;
     }
   public String getTudo(){
-        return cliente.getNomeInteiro() +" "+ getHamburguer().getIngredientes1();
+        return cliente.getNomeInteiro() +" "+ ingredientes.getIngredientes();
   }
-}
+
+   // public Preco getValor() {
+    //    return valor;
+    }
+
+    //public void setValor(Preco valor) {
+        //this.valor = valor;
+  //  }
+

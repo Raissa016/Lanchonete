@@ -8,27 +8,22 @@ import java.util.List;
 public class  Main {
     public static void main(String[] args) {
 
-        ArrayList<String> ingredienteList = new ArrayList<String>();
+        ArrayList<String> ingredienteList = new ArrayList<>();
         ingredienteList.add("pao");
         ingredienteList.add("Hamburguer");
         ingredienteList.add("bacon");
         ingredienteList.add("ovo");
 
-        ArrayList<String> preco1 = new ArrayList<>();
-        preco1.add("35,00");
-        
-
-        ingredienteList.remove("pao");
-        System.out.println(ingredienteList);
 
 
+        Hamburguer hamburguer = new Hamburguer (ingredienteList,23);
 
-        Cliente cliente = new Cliente("Raissa","Gabriela");
-        Hamburguer hamburguer = new Hamburguer (ingredienteList);
-
-
-        Pedido pedido1 = new Pedido(cliente, hamburguer);
         System.out.println(hamburguer.getIngredientes());
+
+        System.out.println("antes de tirar"+ hamburguer.getIngredientes());
+        hamburguer.tiraringredientes("ovo");
+        System.out.println("depois de tirar"+ hamburguer.getIngredientes());
+
 
 
 

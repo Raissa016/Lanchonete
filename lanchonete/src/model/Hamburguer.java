@@ -4,10 +4,12 @@ import  java.util.ArrayList;
 
 public class Hamburguer {
     private  ArrayList<String> ingredientes;
-    public ArrayList<String> preco;
+   private double preco;
 
-    public Hamburguer(ArrayList<String> ingredientes) {
+
+    public Hamburguer(ArrayList<String> ingredientes, double preco) {
         this.ingredientes = ingredientes;
+        this.preco = preco;
     }
 
     public ArrayList<String> getIngredientes() {
@@ -18,14 +20,17 @@ public class Hamburguer {
         this.ingredientes = ingredientes;
     }
 
-    public ArrayList<String> getPreco() {
+    public double getPreco() {
         return preco;
     }
 
-    public void setPreco(ArrayList<String> preco) {
+    public void setPreco(double preco) {
         this.preco = preco;
     }
 
+    public void tiraringredientes(String ingredientes){
+        this.ingredientes.remove(ingredientes);
+    }
 }
 
 
